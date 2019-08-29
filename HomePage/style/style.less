@@ -1,0 +1,161 @@
+//TODO: 0. Reset html and import Fonts
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700|Raleway:400,500,600,700,800|Sail&display=swap');
+.raleway-regular{
+    font-family: Raleway;
+    font-weight: 400;
+}
+.domine-regular{
+    font-family: Domine;
+    font-weight: 400;
+}
+.raleway-semibold{
+    font-family: Raleway;
+    font-weight: 600;
+}
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    
+  }
+  
+  ol, ul {
+    list-style: none;
+}
+//TODO: 0.1: declare colors, function and some variable
+
+@color-1: #c44860;
+@color-2: #4d772d;
+@color-3: #5892d0;
+
+@text-color-1: #333333;
+@text-color-2: #797476;
+
+@alert-color-success: #f52e55;
+@alert-color-noti: #f4b757;
+@alert-color-warning: #b4d932;
+
+.text-style(@family,@size,@weight){
+    font-family: @family;
+    font-size: @size;
+    font-weight: @weight;
+}
+
+
+.border-radius (@radius) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+}
+.badge(@width,@height,@color,@text-color,@x,@y){
+    position: absolute;
+    width: @width;
+    height: @height;
+    background-color:@color;
+    color: @text-color;
+    top: @x;
+    left: @y;
+    text-align: center;
+}
+//TODO: 1. Header
+header{
+    background: transparent;
+    height: 134px;
+    width: 100%;
+    .container{
+        height: 100%;
+    }
+    .navbar{
+        padding-top:6px;
+        height: 100%;
+        .nav-item {
+            &:hover {
+                .dropdown-menu{
+                    display: block;
+                    margin-top:0px;
+                }
+        
+            }
+            .dropdown-item{
+                cursor: pointer;
+            }
+        }
+        #navbarSupportedContent{
+            margin-left: 46px;
+            .navbar-nav{
+                .text-style(Raleway,17px,600);
+                .shop-nav{
+                    position: relative;
+                    margin-left: 18px;
+                    .badge-shop{
+                        .badge(46px,20px,@color-1,white,-11px,10px);
+                        .border-radius(10px);
+                        .text-style(Raleway,10px,600);
+                        padding-top:3px;
+                    }
+                }
+                .page-nav{
+                    margin-left: 21px;
+                }
+                .blog-nav{
+                    margin-left: 21px;
+                }
+                
+            }
+            
+        }
+        #navbarUserContent{
+            margin-left:12px;
+            .user{
+                margin-top: 7px;
+            }
+            .action-search{
+                padding-top: 8px;
+                margin-top: 7px;
+                margin-left: 22px;
+                button{
+                    padding: 0px;
+                    font-size: 21px
+                }
+            }
+            .shopping-cart{
+                position: relative;
+                margin-left: 26px;
+                margin-top: 14px;
+                .badge-cart{
+                    .badge(20px,20px,@color-1,white,0px,22px);
+                    .text-style(Raleway,15px,400);
+                    .border-radius(50%);
+                    justify-content: center;
+                    align-items: center;
+	                display: flex;
+                }
+            }
+            .list{
+                margin-left: 64px;
+                margin-bottom: 5px;
+                button{
+                    .border-radius(50%);
+                    border:none;
+                    box-shadow: 0 0 10px #e0e0e0;
+                    box-sizing: border-box;
+                    width: 55px;
+                    height: 55px;
+                    padding-bottom: 4px;
+                }
+            }
+            
+
+        }
+    }
+}
+
+.removebtn{
+    background: none;
+    border:none;
+}
+.ti-angle-down{
+    font-size : 8.5px;
+    padding-left: 3px;
+}

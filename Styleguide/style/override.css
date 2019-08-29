@@ -1,0 +1,13 @@
+.breadcrumb-item + .breadcrumb-item::before {
+    color:#c44860;
+  }
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: 0.05px;
+    color: white;
+    
+  }
+.breadcrumb-item{
+  font-size: 14px;
+}
+
+
