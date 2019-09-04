@@ -1,3 +1,57 @@
+
+@color-1: #c44860;
+@color-2: #4d772d;
+@color-3: #5892d0;
+
+@text-color-1: #333333;
+@text-color-2: #797476;
+
+@alert-color-success: #f52e55;
+@alert-color-noti: #f4b757;
+@alert-color-warning: #b4d932;
+
 .dropdown-toggle::after {
     display: none;
+}
+.owl-carousel{
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+.owl-dots{
+    margin: 0px !important;
+    padding: 0px;
+    width: 14px;
+    height: 96px;
+    position: absolute;
+    left: 9.4%;
+    top: 44.5%;
+    transform: rotate(-180deg);
+    
+}
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    box-sizing: border-box;
+    border: 1px solid#f2ccc4 ;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    margin: 9px 0px;
+    span{
+        width: 4px;
+        height: 4px;
+        margin: 0px 4px;
+        display: none;
+    }
+    &.active{
+        span{
+            background-color: @color-1;
+
+            display: block;
+        }
+    }
+}
+.navbar{
+    flex-wrap: nowrap;
 }
