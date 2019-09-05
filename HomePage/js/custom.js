@@ -31,17 +31,14 @@ window.onscroll = function () {
 
 $(document).ready(function () {
 
-  owl = $(".owl-carousel").owlCarousel({
+  owl = $("#slider-header").owlCarousel({
 
     navigation: true,
     slideSpeed: 300,
     paginationSpeed: 400,
     singleItem: true,
     items: 1,
-    itemsDesktop: false,
-    itemsDesktopSmall: false,
-    itemsTablet: false,
-    itemsMobile: false,
+    
 
   });
   owl.on('changed.owl.carousel', function(e) {
@@ -49,6 +46,7 @@ $(document).ready(function () {
   });
 });
   
+
 $(document).ready(restart());
 function restart(){
   $('.item-extend').css({'right': '-1px'}),
@@ -57,6 +55,18 @@ function restart(){
   $('.item-extend').fadeIn(2000);
 }
 
+$(document).ready(function () {
+
+  owl = $("#slider-bestsell").owlCarousel({
+
+    navigation: true,
+    slideSpeed: 300,
+    paginationSpeed: 400,
+    items: 4,
+
+  });
+  
+});
 
 //TODO: Navbar-nav
 $('ul.navbar-nav li.dropdown').hover(function () {

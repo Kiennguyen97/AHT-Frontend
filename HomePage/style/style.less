@@ -402,6 +402,24 @@ header {
                     padding-right: 36px;
                 }
 
+                &.text-content-center {
+                    top: 55.85%;
+                    left: 30.5%;
+                    padding-left: 24px;
+                    z-index: 99;
+                }
+
+                &.text-content-right-top {
+                    top: 14.6%;
+                    right: 9%;
+
+                    .title {
+                        padding-left: 38px;
+                    }
+
+                }
+
+
                 .title {
                     .text-style(Raleway, 20px, 400);
                     margin-bottom: 1px;
@@ -440,6 +458,33 @@ header {
                 }
             }
 
+            &.product-7 .text {
+                .text-link {
+                    margin-left: 24px;
+                }
+            }
+
+            &.product-5 .text {
+                .title {
+                    padding-top: 6.1px;
+                    padding-left: 41px;
+                    .text-style(Raleway, 30px, 400);
+                    margin-bottom: 0px;
+                }
+
+                .text-link {
+
+                    a {
+                        .text-style(Raleway, 30px, 600);
+                        padding-left: 12px;
+                    }
+
+                    &::after {
+                        bottom: -9px;
+                    }
+                }
+            }
+
             &.product-3 .text {
 
                 .title {
@@ -461,10 +506,7 @@ header {
             }
 
             &.product-4 .text {
-                top: 48.6%;
-                left: 30.5%;
-                padding-left: 24px;
-                z-index: 99;
+
 
                 .title {
                     padding-left: 6px;
@@ -601,6 +643,58 @@ header {
                     background-image: url('../images/image_4.jpg');
                     transition: transform 1s;
 
+                }
+            }
+        }
+
+    }
+}
+
+.section-builder {
+    width: 100%;
+    height: 806px;
+
+    .container {
+        height: 100%;
+        max-width: 1200px;
+        padding: 0px 15px;
+
+        .slider-title {
+            height: 24.67%;
+
+            .panel {
+                margin-top: -6px;
+                max-width: 100%;
+                height: 100%;
+                position: relative;
+                color: black;
+
+                .panel-back {
+                    opacity: 0.05;
+                    left: 31.6%;
+                    position: absolute;
+                    .text-style(Sail, 120px, 400);
+
+                    .panel-back-first {
+                        font-size: 145px;
+                    }
+                }
+
+                .panel-front {
+                    .text-style(Raleway, 35px, 600);
+                    position: absolute;
+                    top: 52%;
+                    left: 41.5%;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        bottom: -18px;
+                        left: 37%;
+                        height: 2px;
+                        background: @color-1;
+                        width: 27%;
+                        display: block;
+                    }
                 }
             }
         }
