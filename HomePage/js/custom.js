@@ -57,9 +57,9 @@ function restart(){
 
 $(document).ready(function () {
 
-  owl = $("#slider-bestsell").owlCarousel({
-
+  owl = $(".slider-bestsell").owlCarousel({
     navigation: true,
+
     slideSpeed: 300,
     paginationSpeed: 400,
     items: 4,
