@@ -53,67 +53,9 @@ a:hover {
 
 //TODO: 0.1: declare colors, function and some variable
 
-@color-1: #c44860;
-@color-2: #4d772d;
-@color-3: #5892d0;
+@import "./variables.less";
 
-@text-color-1: #333333;
-@text-color-2: #797476;
-
-@alert-color-success: #f52e55;
-@alert-color-noti: #f4b757;
-@alert-color-warning: #b4d932;
-
-.text-style(@family, @size, @weight) {
-    font-family: @family;
-    font-size: @size;
-    font-weight: @weight;
-}
-
-.rotate-a(@degs) {
-    transform: rotate(@degs);
-
-    /* Safari */
-    -webkit-transform: rotate(@degs);
-
-    /* Firefox */
-    -moz-transform: rotate(@degs);
-
-    /* IE */
-    -ms-transform: rotate(@degs);
-
-    /* Opera */
-    -o-transform: rotate(@degs);
-}
-
-.border-radius (@radius) {
-    border-radius: @radius;
-    -moz-border-radius: @radius;
-    -webkit-border-radius: @radius;
-}
-
-.box-shadow(@x, @y, @z, @color) {
-    box-shadow: @x @y @z @color;
-}
-
-.badge(@width, @height, @color, @text-color, @y, @x) {
-    position: absolute;
-    width: @width;
-    height: @height;
-    background-color: @color;
-    color: @text-color;
-    top: @x;
-    left: @y;
-    text-align: center;
-}
-
-.zoom(@scale) {
-    -webkit-transform: scale(@scale);
-    -moz-transform: scale(@scale);
-    -o-transform: scale(@scale);
-    -ms-transform: scale(@scale);
-    transform: scale(@scale);
-}
+@import "./mixins";
 
 //TODO: 1. Header
 header {
@@ -257,7 +199,7 @@ header {
     color: #ffffff;
 }
 
-.removebtn {
+.removeborder{
     background: none;
     border: none;
 }
@@ -720,13 +662,18 @@ header {
         .slider-bestsell {
             .item-image {
                 max-height: 325px;
+                min-height: 325px;
                 margin-bottom: 20px;
+                img{
+                    max-height: 100%;
+                }
                 .item-status {
                     height: 28.8px;
                     width: 85px;
                     top: 25px;
                     left: 5px;
                     .text-style(Raleway, 12.89px, 600);
+
                     &.status-new {
                         left: 2px;
                     }
@@ -833,7 +780,7 @@ header {
             position: absolute;
             .border-radius(35px);
             text-align: center;
-            transition: background .5 esase;
+            transition: background .5 ease;
             cursor: pointer;
 
             span {
@@ -898,10 +845,90 @@ header {
 
         }
     }
-    .items-detail{
-        a>.name-item{
-            .text-style(Raleway,14px,800) ; 
-            color:black;
+
+
+}
+
+.items-detail {
+    &>a {
+        .text-style(Raleway, 15.53px, 800);
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 0.24px;
+        line-height: 20px;
+
+        &:hover {
+            color: #f4ac7d;
         }
+    }
+
+    .item-rating {
+        margin-top: 4px;
+
+        .total-rating {
+            margin-top:-2px;
+            width: 100%;
+            height: 32px;
+
+            .rating-results {
+                display: inline-block;
+                color: #fec104;
+
+                i {
+                    font-size: 11.3px;
+                }
+            }
+        }
+
+    }
+
+    .item-price {
+        align-items: center;
+        display: flex;
+        margin-top: -5px;
+        .text-style(Domine, 15px, 800);
+        letter-spacing: -0.25px;
+        min-height: 50px;
+        padding-bottom: 10px;
+        .price-infor{
+            width: 49.5%;
+            display: inline-block;
+            margin-left: -2px;
+            .price-sale {
+                color: @color-1;
+            }
+    
+            .price-current {
+                margin-left: 4px;
+                color: #797476;
+                text-decoration: line-through;
+                // position: relative;
+                // &::after {
+                //     position: absolute;
+                //     content: " ";
+                //     width: 100%;
+                //     height: 2px;
+                //     display: block;
+                //     top: 10px;
+                //     background: #797476;
+                // }
+            }
+        }
+        
+        .price-save{
+            display: inline-block;
+            .sale-badge {
+                margin: 3px;
+                .badge(35px, 35px, @color-1, white, 0px, 20px);
+                position: static;
+                .text-style(Domine, 13px, 700);
+                .border-radius(50%);
+                justify-content: center;
+                align-items: center;
+                display: flex;
+    
+            }
+        }
+        
     }
 }
