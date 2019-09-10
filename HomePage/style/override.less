@@ -35,27 +35,18 @@
     }
 
     &.slider-bestsell {
-
-        .owl-stage-outer{
-            min-height:473px;
-            .owl-stage{
-                height: 473px;
-                min-width: 2700px;
-                .owl-item {
-                    min-height: 100%;
-                    max-width: 270px;
-                    margin-right: 30px;
-                    .item{
-                        max-width: 270px;
-                    }
-                }
+        // position: relative;
+        .item{
+            padding: 0 15px 5px 15px;
+            img{
+                min-height: 325px;
             }
         }
         .owl-dots {
             position: absolute;
             left: 46%;
             display: inline-block;
-            margin: 0px !important;
+            margin-top: 25px !important;
             padding: 0px;
             .owl-dot {
                 margin: 0px 9px;
@@ -98,4 +89,7 @@
 
 .navbar {
     flex-wrap: nowrap;
+}
+@media (min-width: 1200px) {
+    
 }

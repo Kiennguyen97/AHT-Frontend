@@ -51,7 +51,7 @@ $(document).ready(restart());
 function restart(){
   $('.item-extend').css({'right': '-1px'}),
   $('.item-extend').css({'display': 'none'}),
-  $('.item-extend').animate({'right': '19.4%'}, {"duration":2000,"queue":false});
+  $('.item-extend').animate({'right': '19.4vw'}, {"duration":2000,"queue":false});
   $('.item-extend').fadeIn(2000);
 }
 
@@ -59,11 +59,21 @@ $(document).ready(function () {
 
   owl = $(".slider-bestsell").owlCarousel({
     navigation: true,
-
+    
     slideSpeed: 300,
     paginationSpeed: 400,
-    items: 4,
-
+    items: 1,
+    responsive:{
+      0:{
+          items:2,
+      },
+      1000:{
+          items:3,
+      },
+      1700:{
+          items:4,
+      }
+    }
   });
   
 });

@@ -22,8 +22,8 @@
         <header id="header">
             <div class="container pl-0">
                 <nav class=" navbar navbar-expand-lg navbar-light row pl-0">
-                    <div class="col-xl-3 col-md-2 pl-0">
-                        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+                    <div class="col-xl-3 col-md-3 pl-0">
+                        <a class="navbar-brand" href="#"><img src="images/header/logo.png" alt="logo"></a>
                         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation"><i><img src="images/menu.png"
+                        aria-expanded="false" aria-label="Toggle navigation"><i><img src="images/header/menu.png"
                                 alt="Menu"></i>
                     </button>
                     <div class="collapse navbar-collapse col-xl-6 col-md-5" id="navbarSupportedContent">
@@ -83,12 +83,12 @@
                     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarUserContent" aria-controls="navbarUserContent" aria-expanded="false" aria-label="Toggle navigation">
                                             <span class="navbar-toggler-icon"></span>
                                     </button> -->
-                    <div class="collapse navbar-collapse col-xl-3 col-md-5" id="navbarUserContent">
+                    <div class="collapse navbar-collapse col-xl-3 col-md-4" id="navbarUserContent">
                         <ul class="navbar-nav pull-right ">
                             <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle user " href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-                                        src="images/user.png" alt="User"></a>
+                                        src="images/header/user.png" alt="User"></a>
                                 <div class="dropdown-menu ">
                                     <div class="dropdown-item">MyAccount</div>
                                 </div>
@@ -98,12 +98,12 @@
                                         class="ti-search"></i></button>
                             </li>
                             <li class="shopping-cart">
-                                <a class="cart "><img src="images/cart.png"> </a>
+                                <a class="cart "><img src="images/header/cart.png"> </a>
                                 <span class="badge-cart">0</span>
                             </li>
                             <li class="dropdown list  ">
                                 <button class="dropdown-toggle " type="button" data-toggle="dropdown"><i><img
-                                            src="images/menu.png" alt="Menu"></i></button>
+                                            src="images/header/menu.png" alt="Menu"></i></button>
                                 <div class="dropdown-menu">
                                     <div class="dropdown-item">Homepage</div>
                                     <div class="dropdown-item">Shop</div>
@@ -114,8 +114,8 @@
                 </nav>
             </div>
         </header>
-        <div id="slider-header" class="owl-carousel owl-theme">
-            <div class="item"><img src="./images/slider-1.jpg" alt="1">
+        <section id="slider-header" class="owl-carousel owl-theme">
+            <div class="item"><img src="./images/header/slider-1.jpg" alt="1">
                 <div class="item-extend">
                     <div class="badge-title">
                         <div>SALE</div>
@@ -129,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item"><img src="./images/slider-2.jpg" alt="2">
+            <div class="item"><img src="./images/header/slider-2.jpg" alt="2">
                 <div class="item-extend">
                     <div class="badge-title">
                         <div>SALE</div>
@@ -143,7 +143,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item"><img src="./images/slider-3.jpg" alt="3">
+            <div class="item"><img src="./images/header/slider-3.jpg" alt="3">
                 <div class="item-extend">
                     <div class="badge-title">
                         <div>SALE</div>
@@ -157,15 +157,15 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="categories container-fluid">
+        </section>
+        <section class="categories container-fluid">
             <div class="row pl-0">
                 <div class="category category-1 col-lg-4 p-0">
                     <div class="container-fluid">
                         <div class="row pl-0">
-                            <div class="product product-small product-1 col-lg-6 p-0">
-                                <div class="product-image"></div>
-                                <div class="text text-content-left-top">
+                            <div class="product product-small left product-1 col-lg-6 p-0">
+                                <img src="./images/category/image_1.jpg" alt="">
+                                <div class="text text-content-left-top" style="">
                                     <div class="banner-text">
                                         <div class="heading-banner">
                                             <h4 class="title">Organic</h4>
@@ -176,9 +176,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product product-small product-2 col-lg-6 p-0">
-                                <div class="product-image"></div>
-                                <div class="text text-content-left-top">
+                            <div class="product product-small left product-2 col-lg-6 p-0">
+                                <img src="./images/category/image_2.jpg" style="margin-left:0.15625vw" alt="">
+                                <div class="text text-content-left-top" style="margin-left: 3px;">
                                     <div class="banner-text">
                                         <div class="heading-banner">
                                             <h4 class="title">Mineral</h4>
@@ -190,8 +190,9 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="row product product-3">
-                            <div class="product-image"></div>
+                            <img src="./images/category/image_3.jpg" alt="">
                             <div class="text text-content-right-center">
                                 <div class="banner-text">
                                     <div class="heading-banner">
@@ -205,29 +206,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="category category-2 col-lg-4 p-0">
-                    <div class="container-fluid ">
-                        <div class="row product product-4">
-                            <div class="product-image"></div>
-                            <div class="text text-content-center">
-                                <div class="banner-text">
-                                    <div class="heading-banner">
-                                        <h4 class="title">Organic Perfume</h4>
-                                        <h4 class="text-link noline">
-                                            <a href="#">Sale up to 50%</a>
-                                        </h4>
-                                    </div>
+                <div class="category category-2 p-0">
+                    <div class=" product product-4">
+                        <img src="./images/category/image_4.jpg" alt="">
+                        <div class="text text-content-center">
+                            <div class="banner-text">
+                                <div class="heading-banner">
+                                    <h4 class="title">Organic Perfume</h4>
+                                    <h4 class="text-link noline">
+                                        <a href="#">Sale up to 50%</a>
+                                    </h4>
                                 </div>
-                                <div class="button-gradient hover"><a href="#"><span>+ Shop now</span></a></div>
                             </div>
-
+                            <div class="button-gradient hover"><a href="#"><span>+ Shop now</span></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="category category-3 col-lg-4 p-0">
                     <div class="container-fluid ">
                         <div class="row product product-5">
-                            <div class="product-image"></div>
+                            <img src="./images/category/image_5.jpg" alt="">
                             <div class="text text-content-right-center">
                                 <div class="banner-text">
                                     <div class="heading-banner">
@@ -240,8 +238,8 @@
                             </div>
                         </div>
                         <div class="row pl-0">
-                            <div class="product product-small product-6 col-lg-6 p-0">
-                                <div class="product-image"></div>
+                            <div class="product product-small right product-6 col-lg-6 p-0">
+                                <img src="./images/category/image_6.jpg" alt="">
                                 <div class="text text-content-right-top">
                                     <div class="banner-text">
                                         <div class="heading-banner">
@@ -253,8 +251,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product product-small product-7 col-lg-6 p-0">
-                                <div class="product-image"></div>
+                            <div class="product product-small right product-7 col-lg-6 p-0">
+                                <img src="./images/category/image_7.jpg" style="margin-left: 0.15625vw;" alt="">
                                 <div class="text text-content-right-top ">
                                     <div class="banner-text ">
                                         <div class="heading-banner">
@@ -271,225 +269,502 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section-builder">
-            <div class="container">
-                <div class="row slider-title">
-                    <div class="col-lg-12">
-                        <div class="panel">
-                            <span class="panel-back"><span class="panel-back-first">A</span>rangi</span>
-                            <span class="panel-front">Best Sellers</span>
+        </section>
+        <section class="section-builder">
+            <div class="slider-title">
+                <div class="panel">
+                    <div class="panel-back"><span class="panel-back-first">A</span>rangi</div>
+                    <div class="panel-front">Best Sellers</div>
+                </div>
+            </div>
+            <div class="slider-product">
+                <div class="owl-carousel owl-theme slider-bestsell">
+                    <div class="item">
+                        <img src="./images/slider/img-1.jpg" alt="1">
+                        <div class="item-status status-sale">
+                            <span>Sale</span>
+                        </div>
+                        <div class="items-extend">
+                            <div class="items-extend-detail">
+                                <div class="button-addtocart"><span>+ Add to cart</span></div>
+                                <div class="item-description">
+                                    <span>Lorem Ipsum is simply dummy text of the printing and.</span>
+                                </div>
+                                <div class="item-action">
+                                    <a href="#"><span class="ti-heart"></span></a>
+                                    <a href="#"><span class="ti-eye"></span></a>
+                                    <a href="#"><span class="ti-control-shuffle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-detail">
+                            <a href="#">Organic Strawberry & Milk</a>
+                            <div class="item-rating">
+                                <div class="total-rating">
+                                    <span class="rating-results">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <div class="price-infor">
+                                    <span class="price-sale">$ 400.00</span>
+                                    <span class="price-current">$ 480.00</span>
+                                </div>
+                                <div class="price-save">
+                                    <sup class="sale-badge">-20<sup class="percent">%</sup></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="owl-carousel owl-theme slider-bestsell col-lg-12">
-                        <div class="item">
-                            <div class="item-image">
-                                <div class="item-status status-sale">
-                                    <span>Sale</span>
+                    <div class="item">
+                        <img src="./images/slider/img-2.jpg" alt="1">
+                        <div class="items-extend">
+                            <div class="items-extend-detail">
+                                <div class="button-addtocart"><span>+ Add to cart</span></div>
+                                <div class="item-description">
+                                    <span>Lorem Ipsum is simply dummy text of the printing and.</span>
                                 </div>
-                                <div class="items-extend">
-                                    <div class="button-addtocart"><span>+ Add to cart</span></div>
-                                    <div class="item-description">
-                                        <span>Lorem Ipsum is simply dummy text of the printing and.</span>
-                                    </div>
-                                    <div class="item-action">
-                                        <a href="#"><span class="ti-heart"></span></a>
-                                        <a href="#"><span class="ti-eye"></span></a>
-                                        <a href="#"><span class="ti-control-shuffle"></span></a>
-                                    </div>
-                                </div>
-                                <img src="./images/img-1.png" alt="1">
-                            </div>
-                            <div class="items-detail">
-                                <a href="#">Organic Strawberry & Milk</a>
-                                <div class="item-rating">
-                                    <div class="total-rating">
-                                        <span class="rating-results">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="item-price">
-                                    <div class="price-infor">
-                                        <span class="price-sale">$ 400.00</span>
-                                        <span class="price-current">$ 480.00</span>
-                                    </div>
-                                    <div class="price-save">
-                                        <span class="sale-badge">-20<span class="percent">%</span></span>
-                                    </div>
-                                    
+                                <div class="item-action">
+                                    <a href="#"><span class="ti-heart"></span></a>
+                                    <a href="#"><span class="ti-eye"></span></a>
+                                    <a href="#"><span class="ti-control-shuffle"></span></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="item-image">
-                                <div class="items-extend">
-                                    <div class="button-addtocart"><span>+ Add to cart</span></div>
-                                    <div class="item-description">
-                                        <span>Lorem Ipsum is simply dummy text of the printing and.</span>
-                                    </div>
-                                    <div class="item-action">
-                                        <a href="#"><span class="ti-heart"></span></a>
-                                        <a href="#"><span class="ti-eye"></span></a>
-                                        <a href="#"><span class="ti-control-shuffle"></span></a>
-                                    </div>
+                        <div class="items-detail">
+                            <a href="#">Silk Nectar Shine Shampoo</a>
+                            <div class="item-rating">
+                                <div class="total-rating">
+                                    <span class="rating-results">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
                                 </div>
-                                <img src="./images/img-2.png" alt="2">
                             </div>
-                            
-                            <div class="items-detail">
-                                    <a href="#">Silk Nectar Shine Shampoo </a>
-                                    <div class="item-rating">
-                                        <div class="total-rating">
-                                            <span class="rating-results">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="item-price">
-                                        <div class="price-infor">
-                                            <span class="price-sale">$ 400.00</span>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item-image">
-                                <div class="item-status status-new">
-                                    <span>New</span>
+                            <div class="item-price">
+                                <div class="price-infor">
+                                    <span class="price-sale">$ 450.00</span>
                                 </div>
-                                <div class="items-extend">
-                                    <div class="button-addtocart"><span>+ Add to cart</span></div>
-                                    <div class="item-description">
-                                        <span>Lorem Ipsum is simply dummy text of the printing and.</span>
-                                    </div>
-                                    <div class="item-action">
-                                        <a href="#"><span class="ti-heart"></span></a>
-                                        <a href="#"><span class="ti-eye"></span></a>
-                                        <a href="#"><span class="ti-control-shuffle"></span></a>
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/slider/img-3.jpg" alt="1">
+                        <div class="item-status status-new">
+                            <span>New</span>
+                        </div>
+                        <div class="items-extend">
+                            <div class="items-extend-detail">
+                                <div class="button-addtocart"><span>+ Add to cart</span></div>
+                                <div class="item-description">
+                                    <span>Lorem Ipsum is simply dummy text of the printing and.</span>
                                 </div>
-                                <img src="./images/img-3.png" alt="3">
-                            </div>
-                            <div class="items-detail">a</div>
-                        </div>
-                        <div class="item">
-                            <div class="item-image">
-                                <div class="item-status status-hot">
-                                    <span>Hot</span>
+                                <div class="item-action">
+                                    <a href="#"><span class="ti-heart"></span></a>
+                                    <a href="#"><span class="ti-eye"></span></a>
+                                    <a href="#"><span class="ti-control-shuffle"></span></a>
                                 </div>
-                                <div class="items-extend">
-                                    <div class="button-addtocart"><span>+ Add to cart</span></div>
-                                    <div class="item-description">
-                                        <span>Lorem Ipsum is simply dummy text of the printing and.</span>
-                                    </div>
-                                    <div class="item-action">
-                                        <a href="#"><span class="ti-heart"></span></a>
-                                        <a href="#"><span class="ti-eye"></span></a>
-                                        <a href="#"><span class="ti-control-shuffle"></span></a>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="items-detail">
+                            <a href="#">Organic Shop Body Cream</a>
+                            <div class="item-rating">
+                                <div class="total-rating">
+                                    <span class="rating-results">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
                                 </div>
-                                <img src="./images/img-4.png" alt="4">
                             </div>
-                            <div class="items-detail">a</div>
-                        </div>
-                        <div class="item">
-                            <div class="item-image">
-                                <div class="items-extend">
-                                    <div class="button-addtocart"><span>+ Add to cart</span></div>
-                                    <div class="item-description">
-                                        <span>Lorem Ipsum is simply dummy text of the printing and.</span>
-                                    </div>
-                                    <div class="item-action">
-                                        <a href="#"><span class="ti-heart"></span></a>
-                                        <a href="#"><span class="ti-eye"></span></a>
-                                        <a href="#"><span class="ti-control-shuffle"></span></a>
-                                    </div>
-                                </div><img src="./images/img-5.png" alt="5">
-                            </div>
-                            <div class="items-detail">a</div>
-                        </div>
-                        <div class="item">
-                            <div class="item-image">
-                                <div class="items-extend">
-                                    <div class="button-addtocart"><span>+ Add to cart</span></div>
-                                    <div class="item-description">
-                                        <span>Lorem Ipsum is simply dummy text of the printing and.</span>
-                                    </div>
-                                    <div class="item-action">
-                                        <a href="#"><span class="ti-heart"></span></a>
-                                        <a href="#"><span class="ti-eye"></span></a>
-                                        <a href="#"><span class="ti-control-shuffle"></span></a>
-                                    </div>
-                                </div><img src="./images/img-6.png" alt="6">
-                            </div>
-                            <div class="items-detail">a</div>
-                        </div>
-                        <div class="item">
-                            <div class="item-image">
-                                <div class="items-extend">
-                                    <div class="button-addtocart"><span>+ Add to cart</span></div>
-                                    <div class="item-description">
-                                        <span>Lorem Ipsum is simply dummy text of the printing and.</span>
-                                    </div>
-                                    <div class="item-action">
-                                        <a href="#"><span class="ti-heart"></span></a>
-                                        <a href="#"><span class="ti-eye"></span></a>
-                                        <a href="#"><span class="ti-control-shuffle"></span></a>
-                                    </div>
-                                </div><img src="./images/img-7.png" alt="7">
-                            </div>
-                            <div class="items-detail">
-
+                            <div class="item-price">
+                                <div class="price-infor">
+                                    <span class="price-sale">$ 500.00</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="item-image">
-                                <div class="items-extend">
-                                    <div class="button-addtocart"><span>+ Add to cart</span></div>
-                                    <div class="item-description">
-                                        <span>Lorem Ipsum is simply dummy text of the printing and.</span>
-                                    </div>
-                                    <div class="item-action">
-                                        <a href="#"><span class="ti-heart"></span></a>
-                                        <a href="#"><span class="ti-eye"></span></a>
-                                        <a href="#"><span class="ti-control-shuffle"></span></a>
-                                    </div>
-                                </div><img src="./images/img-8.png" alt="8">
-                            </div>
-                            <div class="items-detail">a</div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/slider/img-4.jpg" alt="1">
+                        <div class="item-status status-hot">
+                            <span>HOT</span>
                         </div>
-                        <div class="item">
-                            <div class="item-image">
-                                <div class="items-extend">
-                                    <div class="button-addtocart"><span>+ Add to cart</span></div>
-                                    <div class="item-description">
-                                        <span>Lorem Ipsum is simply dummy text of the printing and.</span>
-                                    </div>
-                                    <div class="item-action">
-                                        <a href="#"><span class="ti-heart"></span></a>
-                                        <a href="#"><span class="ti-eye"></span></a>
-                                        <a href="#"><span class="ti-control-shuffle"></span></a>
-                                    </div>
-                                </div><img src="./images/img-9.png" alt="9">
+                        <div class="items-extend">
+                            <div class="items-extend-detail">
+                                <div class="button-addtocart"><span>+ Add to cart</span></div>
+                                <div class="item-description">
+                                    <span>Lorem Ipsum is simply dummy text of the printing and.</span>
+                                </div>
+                                <div class="item-action">
+                                    <a href="#"><span class="ti-heart"></span></a>
+                                    <a href="#"><span class="ti-eye"></span></a>
+                                    <a href="#"><span class="ti-control-shuffle"></span></a>
+                                </div>
                             </div>
-                            <div class="items-detail">a</div>
                         </div>
-
+                        <div class="items-detail">
+                            <a href="#">&nbspBody Mousse - Organic</a>
+                            <div class="item-rating">
+                                <div class="total-rating">
+                                    <span class="rating-results">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <div class="price-infor">
+                                    <span class="price-sale">$ 200.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/slider/img-1.jpg" alt="1">
+                        <div class="item-status status-sale">
+                            <span>Sale</span>
+                        </div>
+                        <div class="items-extend">
+                            <div class="items-extend-detail">
+                                <div class="button-addtocart"><span>+ Add to cart</span></div>
+                                <div class="item-description">
+                                    <span>Lorem Ipsum is simply dummy text of the printing and.</span>
+                                </div>
+                                <div class="item-action">
+                                    <a href="#"><span class="ti-heart"></span></a>
+                                    <a href="#"><span class="ti-eye"></span></a>
+                                    <a href="#"><span class="ti-control-shuffle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-detail">
+                            <a href="#">Organic Strawberry & Milk</a>
+                            <div class="item-rating">
+                                <div class="total-rating">
+                                    <span class="rating-results">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <div class="price-infor">
+                                    <span class="price-sale">$ 400.00</span>
+                                    <span class="price-current">$ 480.00</span>
+                                </div>
+                                <div class="price-save">
+                                    <sup class="sale-badge">-20<sup class="percent">%</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/slider/img-1.jpg" alt="1">
+                        <div class="item-status status-sale">
+                            <span>Sale</span>
+                        </div>
+                        <div class="items-extend">
+                            <div class="items-extend-detail">
+                                <div class="button-addtocart"><span>+ Add to cart</span></div>
+                                <div class="item-description">
+                                    <span>Lorem Ipsum is simply dummy text of the printing and.</span>
+                                </div>
+                                <div class="item-action">
+                                    <a href="#"><span class="ti-heart"></span></a>
+                                    <a href="#"><span class="ti-eye"></span></a>
+                                    <a href="#"><span class="ti-control-shuffle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-detail">
+                            <a href="#">Organic Strawberry & Milk</a>
+                            <div class="item-rating">
+                                <div class="total-rating">
+                                    <span class="rating-results">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <div class="price-infor">
+                                    <span class="price-sale">$ 400.00</span>
+                                    <span class="price-current">$ 480.00</span>
+                                </div>
+                                <div class="price-save">
+                                    <sup class="sale-badge">-20<sup class="percent">%</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/slider/img-1.jpg" alt="1">
+                        <div class="item-status status-sale">
+                            <span>Sale</span>
+                        </div>
+                        <div class="items-extend">
+                            <div class="items-extend-detail">
+                                <div class="button-addtocart"><span>+ Add to cart</span></div>
+                                <div class="item-description">
+                                    <span>Lorem Ipsum is simply dummy text of the printing and.</span>
+                                </div>
+                                <div class="item-action">
+                                    <a href="#"><span class="ti-heart"></span></a>
+                                    <a href="#"><span class="ti-eye"></span></a>
+                                    <a href="#"><span class="ti-control-shuffle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-detail">
+                            <a href="#">Organic Strawberry & Milk</a>
+                            <div class="item-rating">
+                                <div class="total-rating">
+                                    <span class="rating-results">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <div class="price-infor">
+                                    <span class="price-sale">$ 400.00</span>
+                                    <span class="price-current">$ 480.00</span>
+                                </div>
+                                <div class="price-save">
+                                    <sup class="sale-badge">-20<sup class="percent">%</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/slider/img-1.jpg" alt="1">
+                        <div class="item-status status-sale">
+                            <span>Sale</span>
+                        </div>
+                        <div class="items-extend">
+                            <div class="items-extend-detail">
+                                <div class="button-addtocart"><span>+ Add to cart</span></div>
+                                <div class="item-description">
+                                    <span>Lorem Ipsum is simply dummy text of the printing and.</span>
+                                </div>
+                                <div class="item-action">
+                                    <a href="#"><span class="ti-heart"></span></a>
+                                    <a href="#"><span class="ti-eye"></span></a>
+                                    <a href="#"><span class="ti-control-shuffle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-detail">
+                            <a href="#">Organic Strawberry & Milk</a>
+                            <div class="item-rating">
+                                <div class="total-rating">
+                                    <span class="rating-results">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <div class="price-infor">
+                                    <span class="price-sale">$ 400.00</span>
+                                    <span class="price-current">$ 480.00</span>
+                                </div>
+                                <div class="price-save">
+                                    <sup class="sale-badge">-20<sup class="percent">%</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/slider/img-1.jpg" alt="1">
+                        <div class="item-status status-sale">
+                            <span>Sale</span>
+                        </div>
+                        <div class="items-extend">
+                            <div class="items-extend-detail">
+                                <div class="button-addtocart"><span>+ Add to cart</span></div>
+                                <div class="item-description">
+                                    <span>Lorem Ipsum is simply dummy text of the printing and.</span>
+                                </div>
+                                <div class="item-action">
+                                    <a href="#"><span class="ti-heart"></span></a>
+                                    <a href="#"><span class="ti-eye"></span></a>
+                                    <a href="#"><span class="ti-control-shuffle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-detail">
+                            <a href="#">Organic Strawberry & Milk</a>
+                            <div class="item-rating">
+                                <div class="total-rating">
+                                    <span class="rating-results">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <div class="price-infor">
+                                    <span class="price-sale">$ 400.00</span>
+                                    <span class="price-current">$ 480.00</span>
+                                </div>
+                                <div class="price-save">
+                                    <sup class="sale-badge">-20<sup class="percent">%</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/slider/img-1.jpg" alt="1">
+                        <div class="item-status status-sale">
+                            <span>Sale</span>
+                        </div>
+                        <div class="items-extend">
+                            <div class="items-extend-detail">
+                                <div class="button-addtocart"><span>+ Add to cart</span></div>
+                                <div class="item-description">
+                                    <span>Lorem Ipsum is simply dummy text of the printing and.</span>
+                                </div>
+                                <div class="item-action">
+                                    <a href="#"><span class="ti-heart"></span></a>
+                                    <a href="#"><span class="ti-eye"></span></a>
+                                    <a href="#"><span class="ti-control-shuffle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-detail">
+                            <a href="#">Organic Strawberry & Milk</a>
+                            <div class="item-rating">
+                                <div class="total-rating">
+                                    <span class="rating-results">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <div class="price-infor">
+                                    <span class="price-sale">$ 400.00</span>
+                                    <span class="price-current">$ 480.00</span>
+                                </div>
+                                <div class="price-save">
+                                    <sup class="sale-badge">-20<sup class="percent">%</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/slider/img-1.jpg" alt="1">
+                        <div class="item-status status-sale">
+                            <span>Sale</span>
+                        </div>
+                        <div class="items-extend">
+                            <div class="items-extend-detail">
+                                <div class="button-addtocart"><span>+ Add to cart</span></div>
+                                <div class="item-description">
+                                    <span>Lorem Ipsum is simply dummy text of the printing and.</span>
+                                </div>
+                                <div class="item-action">
+                                    <a href="#"><span class="ti-heart"></span></a>
+                                    <a href="#"><span class="ti-eye"></span></a>
+                                    <a href="#"><span class="ti-control-shuffle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-detail">
+                            <a href="#">Organic Strawberry & Milk</a>
+                            <div class="item-rating">
+                                <div class="total-rating">
+                                    <span class="rating-results">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <div class="price-infor">
+                                    <span class="price-sale">$ 400.00</span>
+                                    <span class="price-current">$ 480.00</span>
+                                </div>
+                                <div class="price-save">
+                                    <sup class="sale-badge">-20<sup class="percent">%</sup></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+         <div class="banner">
+            <div class="banner-detail">
+                <span class="banner-subtitle">Deal of the day</span></br>
+                <div class="banner-saletitle text-gradient">Big Sale: up to 50% off</div></br>
+                <div class="banner-title">Nourished Life Skin Care</div></br>
+                <div class="banner-detail-content">Lorem Ipsum is simply dummy text of the printing and </br>
+                    typesetting industry. Lorem Ipsum has been the industry's </br> standard dummy text.</div></br>
+                <div class="banner-view">
+                    <a href="#">View Product</a>
+                </div>
+            </div>
         </div>
+        <section class="list-product container">
+            <div class="row list-product-title">
+                <div class="title-left col-lg-3 ">New Arrivals</div>
+                <div class="title-right offset-5 col-lg-4 ">
+                    <ul>
+                        <li>
+                            <a href="#">Eyes</a>
+                        </li>
+                        <li>
+                            <a href="#">Nose</a>
+                        </li>
+                        <li>
+                            <a href="#">Bronzer</a>
+                        </li>
+                        <li>
+                            <a href="#">Leg</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row list-product-item">
+                
+            </div>
+        </section>  -->
     </div>
 
     <script src="https://kit.fontawesome.com/1fdba58441.js"></script>
