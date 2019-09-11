@@ -55,7 +55,7 @@ a:hover {
 
 @import "./mixins";
 
-@import "./respon1190.less";
+// @import "./respon1200.less";
 //TODO: 1. Header
 header {
     position: fixed;
@@ -609,9 +609,16 @@ header {
     }
 
     .slider-product {
-        
+
         margin: 20px auto;
-        max-width:1200px;
+        max-width: 1200px;
+
+        @media screen {
+            @media (max-width:1200px) {
+                max-width: 1000px;
+            }
+        }
+
         img {
             overflow: hidden;
             max-height: 100%;
@@ -625,11 +632,11 @@ header {
             .text-style(Raleway, 12.89px, 600);
 
             &.status-new {
-                left:18px;
+                left: 18px;
             }
 
             &.status-hot {
-                left:17px;
+                left: 17px;
             }
         }
 
@@ -639,10 +646,12 @@ header {
 
             .items-extend-detail {
                 text-align: center;
+
                 .button-addtocart {
                     // left: 30px;
                     // top: 39px;
                     margin: 0px auto;
+
                     span {
                         .text-style(Raleway, 15px, 500);
                     }
@@ -733,6 +742,7 @@ header {
             .box-shadow(2px, 0px, 38px, rgba(133, 133, 133, 0.25));
 
             .button-addtocart {
+                margin: 0px auto;
                 width: 72.17%;
                 height: 18.6%;
                 background: @color-1;
@@ -765,7 +775,8 @@ header {
             }
 
             .item-action {
-
+                text-align: center;
+                margin: 0px auto;
                 a .ti-heart,
                 a .ti-eye,
                 a .ti-control-shuffle {
@@ -811,6 +822,7 @@ header {
 .items-detail {
     margin-top: 1vw;
     text-align: left;
+
     &>a {
         .text-style(Raleway, 15.53px, 800);
         color: black;
@@ -907,10 +919,20 @@ header {
 }
 
 .banner {
+    margin-top: 156px;
     background-image: url('../images/banner.jpg');
     width: 100%;
     height: 804px;
     text-align: right;
+
+    @media screen {
+        @media (max-width:1200px) {
+            text-align: center;
+            margin-top: 50px;
+            height: 600px;
+        }
+    }
+
     // position: relative;
 
     &-detail {
@@ -924,6 +946,7 @@ header {
     &-subtitle {
         text-transform: uppercase;
         .text-style(Raleway, 14px, 800);
+        margin-right: 1px;
     }
 
     &-saletitle {
@@ -931,30 +954,40 @@ header {
         padding-right: 15px;
         font-style: italic;
         margin-top: -4px;
-        .text-style(Sail, 60px, 400);
+        .text-style(Sail, 3.125vw, 400);
+        @media screen and(max-width:1300px){
+            .text-style(Sail, 30px, 400);
+        }
         background-image: linear-gradient(to right, #ba2441 0%, #f39a5a 100%);
     }
 
     &-title {
         .text-style(Raleway, 46px, 700);
+        @media screen and(max-width:1300px){
+            .text-style(Raleway, 30px, 700);
+        }
         margin-top: -38px;
         margin-left: 0px;
-        padding-right: 1px;
-        letter-spacing: 0.01em;
+        margin-right: -2px;
+        letter-spacing: 0.0155em;
     }
 
     &-detail-content {
         margin-top: -9px;
         .text-style(Domine, 18px, 400);
+        @media screen and(max-width:1300px){
+            .text-style(Sail, 15px, 400);
+        }
         color: #999697;
         letter-spacing: 0.025em;
         line-height: 1.875rem;
+        margin-right: 1px;
     }
 
     &-view {
         .text-style(Raleway, 18px, 700);
-        margin-top: 20px;
-        margin-right: 2px;
+        margin-top: 19px;
+        margin-right: 3px;
 
         a {
             color: black;
@@ -969,34 +1002,111 @@ header {
 
 .list-product {
     margin-top: -130px;
-    min-width: 1172px;
+
+    @media screen and (min-width:1200px) {
+        max-width: 1170px;
+    }
+
     min-height: 1032px;
     background: white;
-    z-index: 99;
+    z-index: 20;
     position: relative;
 
     &-title {
-        padding: 8.82% 7.45%;
+        padding: 8.82% 0 9px 0;
 
         .title-left {
             .text-style(Raleway, 25px, 600);
+            margin-top: -1px;
+            padding-left: 2px !important;
         }
 
         .title-right {
-            padding-left: 5.8%;
-            padding-top: 8px;
+            padding-left: 2.57%;
+            padding-top: 7px;
 
             ul {
                 li {
+
                     .text-style(Raleway, 15px, 500);
                     display: inline;
+                    cursor: pointer;
+                    color: black;
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        color: @color-1;
+                    }
 
                     &:not(:nth-child(4)) {
-                        padding-right: 19px;
+                        padding-right: 18.5px;
+                    }
+
+                    &.active {
+                        color: @color-1;
                     }
                 }
             }
         }
     }
 
+    &-item {
+        .tabproduct {
+            max-width: 1000px;
+            display: none;
+
+            .item {
+                // &:nth-child(2){
+                //     padding-left: 8px;
+                // }
+                img{
+                    width: 100%;
+                }
+                .item-status {
+                    padding: 5px 0 0 3px;
+                    .text-style(Raleway,11px,600);
+                    top: 21px;
+                    left: 24px;
+                    width: 26.6%;
+                    height: 6%;
+                }
+                .items-detail{
+                    margin-top: 1.3vw;
+                    .total-rating{
+                        margin-top: 0px;
+                        height:30px;
+                    }
+                    .item-price{
+                        margin-bottom: 4px;
+                        padding-bottom: 9px;
+                    }
+                    .price-sale{
+                        .text-style(Domine,15px,400);
+                    }
+                }
+                .items-extend{
+                    padding: 30px;
+                    width: 88%;
+                    height: 67%;
+                    .items-extend-detail{
+                        padding-top: 60px;
+                        .button-addtocart{
+                            .text-style(Raleway,13px,500);
+                            width: 73.17%;
+                            height: 20.6%;
+                        }
+                        .item-action{
+                            margin-top: 32px;
+                            .zoom(0.85);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+.list-product-footer{
+    background:#e5c8c3 ;
 }

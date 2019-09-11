@@ -64,13 +64,13 @@ $(document).ready(function () {
     paginationSpeed: 400,
     items: 1,
     responsive:{
-      0:{
+      500:{
           items:2,
       },
-      1000:{
+      900:{
           items:3,
       },
-      1700:{
+      1100:{
           items:4,
       }
     }
@@ -85,4 +85,24 @@ $('ul.navbar-nav li.dropdown').hover(function () {
   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
 
-//style
+//li
+// $("li").click(function () {
+//   $("li").css("color", "black");
+//   $(this).css("color", "#c44860");
+// });
+
+//list
+document.getElementById("defaultOpen").click();
+function showList(evt, name) {
+  var i, tabproduct, link;
+  tabproduct = document.getElementsByClassName("tabproduct");
+  for (i = 0; i < tabproduct.length; i++) {
+    tabproduct[i].style.display = "none";
+  }
+  link = document.getElementsByClassName("link");
+  for (i = 0; i < link.length; i++) {
+    link[i].className = link[i].className.replace(" active", "");
+  }
+  document.getElementById(name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
