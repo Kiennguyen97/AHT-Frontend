@@ -8,7 +8,7 @@
 @alert-color-success: #f52e55;
 @alert-color-noti: #f4b757;
 @alert-color-warning: #b4d932;
-
+@import "./mixins.less";
 .dropdown-toggle::after {
     display: none;
 }
@@ -17,16 +17,45 @@
     position: relative;
     top: 0;
     z-index: 1;
-
+    &#slider-header {
+        @media (min-width:320px) and (max-width:600px){
+            img{
+      
+                width: 164%;
+                height: 300px ;
+            }
+            .item-detail{
+                .zoom(2.3);
+                .button-gradient{
+                    .zoom(1.5);
+                    padding: 0.8px;
+;                }
+            }
+            .badge-title{
+                display:none;
+            }
+        }
+    }
     &#slider-header .owl-dots {
         margin: 0px !important;
         padding: 0px;
         width: 14px;
         height: 96px;
         position: absolute;
-        left: 9.4%;
-        top: 44.5%;
-        transform: rotate(-180deg);
+        // left: 9.4%;
+        // top: 44.5%;
+        display: inline;
+        @media (min-width: 320px){
+            transform: rotate(-90deg);
+            left: 47%;
+            top: 79.5%;
+            @media (min-width: 768px){
+                transform: rotate(-180deg) ;
+                left: 9.4%;
+                top: 44.5%;
+            }
+        }
+        
 
         .owl-dot {
             margin: 9px 0px;
@@ -45,7 +74,14 @@
         .owl-dots {
             position: absolute;
             left: 46%;
+            @media(min-width: 600px){
+                left:39%;
+            }
             display: inline-block;
+            @media(min-width: 320px) and (max-width:600px){
+                margin-top: 0px !important;
+                left: 7% !important;
+            }
             margin-top: 25px !important;
             padding: 0px;
             .owl-dot {
@@ -89,7 +125,4 @@
 
 .navbar {
     flex-wrap: nowrap;
-}
-@media (min-width: 1200px) {
-    
 }
