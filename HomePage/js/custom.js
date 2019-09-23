@@ -64,7 +64,7 @@ $(document).ready(function () {
     paginationSpeed: 400,
     items: 1,
     responsive: {
-      
+
       600: {
         items: 3,
       },
